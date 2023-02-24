@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6EFF6;
+}
+.full-container{
+    width:700px;
+    height:500px;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns: repeat(2,350px);
+    overflow: hidden;
+    box-shadow: 10px 10px 10px #E6EFF6;
+    border-radius: 20px;
+   
+}
+.full-container .top-page{
+    grid-column: span 2;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+.full-container .top-page .head{
+    font-size: 30px;
+    color: #2BB3B1;
+}
+.full-container .top-page .sub-head{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #BFDF32;
+}
+.full-container .top-page .text{
+    margin-top: 20px;
+    color: gray;
+    font-weight: lighter;
+
+}
+.full-container .bottom-left{
+    background-color: #2BB3B1;
+    color: white;
+    padding: 30px;
+   
+}
+.full-container .bottom-left .head{
+    font-size: 20px;
+}
+.full-container .bottom-left .money{
+    font-size: 40px;
+    margin-top: 15px;
+}
+.full-container .bottom-left .money span{
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top:-10px;
+    left:10px;
+    
+    
+}
+.full-container .bottom-left .description{
+    margin-top: 5px;
+  
+}
+.full-container .bottom-left .sign-up{
+    border: none;
+    outline: none;
+    background-color: #BFDF32;
+    width:270px;
+    height:50px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transition: text-transform 0.5s, text-decoration-line 0.5s ;
+}
+.full-container .bottom-left .sign-up:hover{
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration-line:underline ;
+}
+.full-container .bottom-right{
+    color: white;
+   padding: 30px;
+   background-color: #4ABEBD;
+
+    
+
+}
+.full-container .bottom-right .head{
+    font-size: 20px;
+    margin-top: -10px;
+}
+.full-container .bottom-right .description{
+    margin-top: -10px;
+}
+@media(max-width:400px){
+   .full-container{
+    width:400px;
+    height: 900px;
+    display: grid;
+    grid-template-rows: repeat(3,300px);
+   overflow:hidden;
+   box-shadow: 10px 10px 10px #E6EFF6;
+}
+body{
+    padding: 20px;
+}
+.full-container .top-page{
+   
+    padding: 20px;
+   
+}
+.full-container .top-page .head{
+    font-size: 25px;
+    color: #2BB3B1;
+}
+.full-container .top-page .sub-head{
+    margin-top: 20px;
+    font-size: 18px;
+    width:350px;
+    color: #BFDF32;
+}
+.full-container .top-page .text{
+    margin-top: 20px;
+    color: gray;
+    font-weight: lighter;
+    width:330px;
+
+}
+.full-container .bottom-right{
+    grid-row: 3/4;
+    width:400px;
+}
+.full-container .bottom-left{
+    width: 400px;
+}
+
+    
+}
